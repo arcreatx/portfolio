@@ -1,0 +1,217 @@
+:root {
+    box-sizing: border-box;
+  }
+  
+  ::before,
+  ::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    background-color: #cccccc;
+    display: flex;
+    font-family: sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+  }
+  
+  .items {
+    color: black;
+  }
+  
+  .leftside {
+    background-color: white;
+    color: black;
+    margin: 15px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    padding: 20px;
+    height: 1000px;
+  }
+  
+  .leftside hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px;
+  }
+  
+  .profession {
+    padding-left: 20px;
+    margin: 10px 0 50px 0;
+  }
+  
+  .skills,
+  .languages {
+    padding-left: 20px;
+    margin: 50px 0 50px 0;
+  }
+  
+  .class {
+    background-color: #cccccc;
+    background: black;
+    color: whitesmoke;
+    display: inline-block;
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 12px;
+    letter-spacing: 1px;
+    margin: 0 0 30px;
+    padding: 10px 15px 8px;
+    text-transform: uppercase;
+  }
+  
+  .small {
+    font-family: monospace;
+    font-size: 14px;
+    border: 5px solid black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
+      0px 0px 20px #b393d3;
+  }
+  
+  .rightside {
+    margin: 15px 15px 15px 5px;
+    padding: 20px;
+    color: black;
+    border: 1px solid snow;
+    background: snow;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    height: 1000px;
+    width: 1000px;
+  }
+  
+  .rightside .items {
+    color: black;
+  }
+  
+  .column h4 {
+    text-decoration: none;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .photo {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: relative;
+    border: 10px solid black;
+    background: linear-gradient(
+      to top,
+      rgba(#cffffe, 0.3),
+      rgba(#f9f7d9, 0.3),
+      rgba(#fce2ce, 0.3),
+      rgba(#ffc1f3, 0.3)
+    );
+    border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23cffffe' /%3E%3Cstop offset='25%25' stop-color='%23f9f7d9' /%3E%3Cstop offset='50%25' stop-color='%23fce2ce' /%3E%3Cstop offset='100%25' stop-color='%23ffc1f3' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3'/%3E %3C/svg%3E")
+      1;
+  }
+  
+  .name {
+    animation: Color 10s linear infinite;
+    -webkit-animation: Color 10s ease-in-out infinite;
+    display: inline-block;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 12px;
+    letter-spacing: 1px;
+    margin-left: 60px;
+  }
+  
+  @keyframes Color {
+    0% {
+      color: #a0d468;
+    }
+  
+    20% {
+      color: #4fc1e9;
+    }
+  
+    40% {
+      color: #ffce54;
+    }
+  
+    60% {
+      color: #fc6e51;
+    }
+  
+    80% {
+      color: #ed5565;
+    }
+  
+    100% {
+      color: #ac92ec;
+    }
+  }
+  
+  @-moz-keyframes Color {
+    0% {
+      color: #a0d468;
+    }
+  
+    20% {
+      color: #4fc1e9;
+    }
+  
+    40% {
+      color: #ffce54;
+    }
+  
+    60% {
+      color: #fc6e51;
+    }
+  
+    80% {
+      color: #ed5565;
+    }
+  
+    100% {
+      color: #ac92ec;
+    }
+  }
+  
+  @-webkit-keyframes Color {
+    0% {
+      color: #a0d468;
+    }
+  
+    20% {
+      color: #4fc1e9;
+    }
+  
+    40% {
+      color: #ffce54;
+    }
+  
+    60% {
+      color: #fc6e51;
+    }
+  
+    80% {
+      color: #ed5565;
+    }
+  
+    100% {
+      color: #ac92ec;
+    }
+  }
+  
